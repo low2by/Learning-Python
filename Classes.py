@@ -25,5 +25,10 @@ class Dog:
     def changeBark(self,bark): 
         self.speakText = bark
 
-boyDog = Dog("Mesa",5,15,2004,"WOOOF")
-print(boyDog.speak())
+def main():
+    boyDog = Dog("Mesa",5,15,2004,"WOOOF")
+    print(boyDog.speak())
+    print(boyDog.birthDate())
+
+if __name__ == '__main__':
+    main()
