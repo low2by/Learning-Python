@@ -31,6 +31,18 @@ class Dog:
     # concatenation of both dog’s text. The dog on the left side of the +
     # operator is the object referenced by the "self" parameter. The
     # "otherDog" parameter is the dog on the right side of the + operator.
+
+    #Other examples of operator overloading 
+    # __add__(self, other)  self + other
+    # __sub__(self, other)  self - other
+    # __mul__(self, other)  self * other
+    # __truediv__(self, other)  self / other
+    # __eq__(self, other)  self == other
+    # __lt__(self, other)  self < other
+    # __len__(self)  len(self)
+    # __str__(self)  print(self)
+    # __float__(self)  float(self) i.e cast
+    # __pow__  self**other
     def __add__(self,otherDog):
         return Dog("Puppy of " + self.name + " and " + otherDog.name, self.month, self.day, self.year + 1, self.speakText + otherDog.speakText)
     

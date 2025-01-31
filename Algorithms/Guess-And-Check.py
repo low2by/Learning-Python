@@ -13,18 +13,25 @@
 # square root
 # Start with a guess and check if it is the right answer
 # To be systematic, start with guess = 0, then 1, then 2, etc
-def squareRoot(x):
 
+# Implementation of Newton-Raphson method
+def squareRoot():
     guess = 0
-
-    while guess <= x:
-        
-
-
-    return x
+    neg_flag = False
+    x = int(input("Enter a positive integer: "))
+    if x < 0:
+        neg_flag = True
+    while guess**2 < x:
+        guess = guess + 1
+    if guess**2 == x:
+        print(f'Square root of {x} is {guess}')
+    else:
+        print(f'{x} is not a perfect square')
+        if neg_flag:
+            print(f'Just checking... did you mean {-x} ?')
 
 def main():
-    print("hello")
+    squareRoot()
 
 if __name__ == '__main__':
     main()
