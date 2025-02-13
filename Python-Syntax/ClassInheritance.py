@@ -57,8 +57,6 @@ class Person(Animal):
         return "person:"+str(self.name)+":"+str(self.age)
 
 
-
-
 def main():
     print("Hello")
 
